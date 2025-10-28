@@ -1,10 +1,13 @@
 // server.js - Express Backend
 import express from "express";
+import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
-import connectDB from "./db.js";
+import connectDB from "./config/db.js";
+import authRoutes from "./routes/authRoutes.js";
 
 const app = express();
+dotenv.config();
 
 // Middleware
 app.use(cors());
@@ -12,6 +15,8 @@ app.use(express.json());
 
 // Connect to MongoDB (Atlas or Local depending on db.js)
 connectDB();
+
+app.use("/api/auth", authRoutes);
 
 // ========== Schemas ==========
 

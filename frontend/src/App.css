@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+.auth-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #f9fafc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.auth-container input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 10px;
+  background: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-container button:hover {
+  background: #005fa3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #0078d7;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar .links a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .links a:hover {
+  text-decoration: underline;
+}
+
